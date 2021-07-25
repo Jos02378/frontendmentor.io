@@ -14,6 +14,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ## Overview
 
 ### The challenge
+
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
@@ -21,7 +22,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.PNG)
-
 
 ### Built with
 
@@ -32,7 +32,7 @@ Users should be able to:
 
 ### What I learned
 
-I forgot that I should have create the design for the mobile first then alter the design for the desktop pages using min-width instead of max-width.
+I forgot that I should have created the design for the mobile-first then alter the plan for the desktop pages using min-width instead of max-width. After receiving a comment, I learned that I could use the property "mix-blend-mode: multiply;" and double overlay to get the same color as in the template design.
 
 ## Author
 
