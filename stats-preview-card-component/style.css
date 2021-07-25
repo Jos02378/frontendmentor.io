@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(233, 47%, 7%);
+  width: 100%;
+  height: 100vh;
+}
+
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+#content-wrapper {
+  width: 70%;
+
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  color: hsl(0, 0%, 100%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+#content-wrapper > p {
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-bottom: 60px;
+}
+
+.stats-counter-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.stats-counter > span {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stats-counter > p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+#image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: hsl(277, 68%, 34%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    height: 100%;
+  }
+
+  #card {
+    border: 1px solid cyan;
+  }
+
+  #wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+    border: 1px solid red;
+    margin: 50px 0;
+  }
+
+  #image-wrapper {
+    grid-row: 1;
+  }
+
+  h1,
+  h1 > span {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  p,
+  span {
+    font-size: 10px;
+  }
+
+  #content-wrapper > p {
+    margin-bottom: 20px;
+  }
+
+  .stats-counter-wrapper {
+    flex-direction: column;
+  }
+
+  .stats-counter {
+    margin: 10px 0;
+  }
+
+  .stats-counter > span {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  #image-wrapper,
+  #overlay,
+  img {
+    border-radius: 10px 10px 0 0;
+  }
+}
