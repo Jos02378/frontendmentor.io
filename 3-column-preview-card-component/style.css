@@ -16,7 +16,8 @@
 }
 
 h1 {
-  display: none;
+  font-size: 0;
+  opacity: 0;
 }
 
 main {
