@@ -10,6 +10,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -37,6 +38,10 @@ Users should be able to:
 - CSS3
 - Flexbox
 - CSS Grid
+
+### What I learned
+
+I learned to implement using relative unit like rem which is much easier to style for making responsive pages.
 
 ## Author
 
