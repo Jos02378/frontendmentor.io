@@ -88,6 +88,7 @@ section {
   background-repeat: no-repeat;
 }
 
+.content > h1,
 .content > h2 {
   text-transform: uppercase;
   font-size: 35px;
@@ -184,6 +185,7 @@ section {
     border-top-right-radius: 10px;
   }
 
+  .content > h1,
   .content > h2 {
     font-size: 2.5rem;
   }
