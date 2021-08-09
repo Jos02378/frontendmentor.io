@@ -115,6 +115,10 @@ main {
     transform: rotate(180deg);
 }
 
+.container__box.active .container__label {
+    font-weight: 700;
+}
+
 .container__label:hover {
     color: var(--soft-red);
 }

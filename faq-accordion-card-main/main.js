@@ -4,8 +4,6 @@ accordions.forEach((accordion) => {
     accordion.addEventListener('click', () => {
         if (accordion.classList.contains('active')) {
             accordion.classList.remove('active');
-            let label = accordion.querySelector('.container__label');
-            label.style.fontWeight = '400';
         } else {
             let currentAccordion = document.querySelector(
                 '.container__box.active'
@@ -19,8 +17,6 @@ accordions.forEach((accordion) => {
             }
 
             accordion.classList.add('active');
-            let label = accordion.querySelector('.container__label');
-            label.style.fontWeight = '700';
         }
     });
 });
