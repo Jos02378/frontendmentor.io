@@ -1,0 +1,222 @@
+:root {
+    /* Primary text */
+    --dark-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+    /* gradient background */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* Neutral text */
+    --very-dark-greyish-blue: hsl(237, 12%, 33%);
+    --dark-greyish-blue: hsl(240, 6%, 50%);
+
+    /* dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* font size */
+    --standard: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        hsl(273, 75%, 66%),
+        hsl(240, 73%, 65%)
+    );
+    font-size: var(--standard);
+    color: var(--dark-blue);
+}
+
+#faq {
+    max-width: 337.5px;
+    max-height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -40px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.container--image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+#woman-mobile {
+    position: absolute;
+    transform: translate(-30px, -55%);
+}
+
+.image-desktop-wrapper {
+    display: none;
+}
+
+#box-desktop {
+    display: none;
+}
+
+.container--text {
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.container__title {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0.8rem 0 1.5rem;
+}
+
+.container__box {
+    position: relative;
+    margin: 10px 0;
+}
+
+.container__label {
+    font-size: 0.9rem;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container__label::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: url('./images/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+}
+
+.container__box.active .container__label::after {
+    transform: rotate(180deg);
+}
+
+.container__label:hover {
+    color: var(--soft-red);
+}
+
+.container__content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.5s ease-in-out;
+    line-height: 1.4;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+    overflow-y: hidden;
+}
+
+.container__box.active .container__content {
+    height: 65px;
+}
+
+.container__description {
+    font-size: 0.8rem;
+    color: var(--very-dark-greyish-blue);
+    margin: 10px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+.attribution a {
+    color: yellow;
+}
+
+@media screen and (min-width: 1200px) {
+    #faq {
+        max-width: 900px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        bottom: 0px;
+        padding-right: 3.5rem;
+    }
+
+    .container--image {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        min-height: 450px;
+        align-items: center;
+    }
+
+    .image-mobile-wrapper {
+        display: none;
+    }
+
+    .image-desktop-wrapper {
+        display: flex;
+        overflow: hidden;
+    }
+
+    #woman-desktop {
+        position: relative;
+        object-fit: cover;
+        left: -18%;
+        z-index: 1;
+    }
+
+    #box-desktop {
+        display: flex;
+        position: absolute;
+        z-index: 10;
+        left: -20%;
+        top: 40%;
+    }
+
+    .background-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    #bg-desktop {
+        position: absolute;
+        left: -125%;
+        bottom: -40%;
+        object-fit: cover;
+    }
+
+    .container--text {
+        flex: 1;
+    }
+
+    .container__title {
+        font-size: 2rem;
+        text-align: left;
+        padding-left: 0.5rem;
+    }
+}
