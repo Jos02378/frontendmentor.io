@@ -138,7 +138,7 @@ main {
 
 .container__description {
     font-size: 0.8rem;
-    color: var(--very-dark-greyish-blue);
+    color: var(--dark-greyish-blue);
     margin: 10px;
 }
 
