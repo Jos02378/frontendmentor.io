@@ -1,199 +1,213 @@
 :root {
-  --orange: hsl(31, 77%, 52%);
-  --cyan: hsl(184, 100%, 22%);
-  --dark-cyan: hsl(179, 100%, 13%);
-  --white: hsla(0, 0%, 100%, 0.75);
-  --gray: hsl(0, 0%, 95%);
-  --standard: 15px;
-  --lexend: 'Lexend Deca';
-  --big-shoulders: 'Big Shoulders Display';
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --gray: hsl(0, 0%, 95%);
+    --standard: 15px;
+    --lexend: 'Lexend Deca';
+    --big-shoulders: 'Big Shoulders Display';
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
 }
 
 h1 {
-  font-size: 0;
-  opacity: 0;
+    font-size: 0;
+    opacity: 0;
 }
 
 main {
-  width: 100%;
-  height: 100%;
-  font-family: var(--big-shoulders), sans-serif;
-  font-size: var(--standard);
+    width: 100%;
+    height: 100%;
+    font-family: var(--big-shoulders), sans-serif;
+    font-size: var(--standard);
 }
 
 section {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 100px;
 }
 
 .card {
-  width: 90%;
-  min-height: 450px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card:first-child {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.card:last-child {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-#sedan {
-  background: var(--orange);
-}
-
-#suv {
-  background: var(--cyan);
-}
-
-#luxury {
-  background: var(--dark-cyan);
-}
-
-.content {
-  width: 70%;
-  position: relative;
-}
-
-.icon {
-  width: 70px;
-  height: 45px;
-  display: block;
-}
-
-#sedan-icon {
-  background: url('./images/icon-sedans.svg');
-  background-repeat: no-repeat;
-}
-
-#suv-icon {
-  background: url('./images/icon-suvs.svg');
-  background-repeat: no-repeat;
-}
-
-#luxury-icon {
-  background: url('./images/icon-luxury.svg');
-  background-repeat: no-repeat;
-}
-
-.content > h2 {
-  text-transform: uppercase;
-  font-size: 35px;
-  font-weight: 700;
-  color: var(--gray);
-  margin: 30px 0;
-}
-
-.content > p {
-  font-family: var(--lexend), sans-serif;
-  color: var(--white);
-  line-height: 2;
-  margin: 30px 0;
-}
-
-.button {
-  width: 170px;
-  height: 50px;
-  border-radius: 100px;
-  background: var(--gray);
-  border: 0;
-}
-
-#sedan-button {
-  color: var(--orange);
-}
-
-#suv-button {
-  color: var(--cyan);
-}
-
-#luxury-button {
-  color: var(--dark-cyan);
-}
-
-.button:active {
-  background: transparent;
-  border: 2px solid var(--white);
-}
-
-#sedan-button:active,
-#suv-button:active,
-#luxury-button:active {
-  color: var(--white);
-}
-
-.attribution {
-  margin-top: 50px;
-  font-size: 1.1rem;
-  text-align: center;
-  display: block;
-  position: relative;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-@media screen and (min-width: 1025px) {
-  main {
-    height: 100vh;
+    width: 90%;
+    max-width: 365px;
+    min-height: 450px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-  }
+}
 
-  section {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    width: 65%;
-    height: 100%;
-  }
-
-  .card {
-    width: 100%;
-    min-height: 80%;
-    margin: 0;
-    align-self: center;
-  }
-
-  .content {
-    margin: 50px 0;
-    /* border: 1px solid cyan; */
-  }
-
-  .icon {
-    width: 80px;
-    height: 55px;
-  }
-
-  .card:first-child {
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 10px;
-  }
-
-  .card:last-child {
-    border-bottom-left-radius: 0;
+.card:first-child {
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  }
+}
 
-  .content > h2 {
-    font-size: 2.5rem;
-  }
+.card:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#sedan {
+    background: var(--orange);
+}
+
+#suv {
+    background: var(--cyan);
+}
+
+#luxury {
+    background: var(--dark-cyan);
+}
+
+.content {
+    width: 70%;
+    position: relative;
+}
+
+.icon {
+    width: 70px;
+    height: 45px;
+    display: block;
+}
+
+#sedan-icon {
+    background: url('./images/icon-sedans.svg');
+    background-repeat: no-repeat;
+}
+
+#suv-icon {
+    background: url('./images/icon-suvs.svg');
+    background-repeat: no-repeat;
+}
+
+#luxury-icon {
+    background: url('./images/icon-luxury.svg');
+    background-repeat: no-repeat;
+}
+
+.content > h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--gray);
+    margin: 30px 0;
+}
+
+.content > p {
+    font-family: var(--lexend), sans-serif;
+    color: var(--white);
+    line-height: 2;
+    margin: 30px 0;
+}
+
+.button {
+    width: 140px;
+    height: 50px;
+    border-radius: 100px;
+    background: var(--gray);
+    font-weight: 600;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#sedan-button {
+    color: var(--orange);
+}
+
+#suv-button {
+    color: var(--cyan);
+}
+
+#luxury-button {
+    color: var(--dark-cyan);
+}
+
+.button:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+}
+
+#sedan-button:hover,
+#suv-button:hover,
+#luxury-button:hover {
+    color: var(--white);
+}
+
+.attribution {
+    margin-top: 50px;
+    font-size: 1.1rem;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1025px) {
+    main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        width: 65%;
+        height: 100%;
+    }
+
+    .card {
+        width: 100%;
+        min-height: 80%;
+        margin: 0;
+        align-self: center;
+    }
+
+    .content {
+        margin: 50px 0;
+    }
+
+    .icon {
+        width: 80px;
+        height: 55px;
+    }
+
+    .card:first-child {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card:last-child {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .content > h2 {
+        font-size: 2.5rem;
+        margin: 10px 0 20px;
+    }
+
+    .content > p {
+        font-family: var(--lexend), sans-serif;
+        color: var(--white);
+        line-height: 2;
+        margin-bottom: 70px;
+    }
 }
