@@ -29,6 +29,7 @@ main {
   align-items: center;
   font-family: var(--kumbh), sans-serif;
   font-size: var(--standard);
+  position: relative;
   overflow: hidden;
 }
 
