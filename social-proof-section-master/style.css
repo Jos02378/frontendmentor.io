@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --primary-dark: hsl(300, 43%, 22%);
+  --primary-light: hsl(333, 80%, 67%);
+
+  --neutral-dark: hsl(303, 10%, 53%);
+  --neutral-light: hsl(300, 24%, 96%);
+
+  --primary-font: 'Spartan';
+}
+
+/******************* 
+    GLOBAL STYLES 
+*******************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/******************* 
+    TYPOGRAPHY 
+*******************/
+
+h1 {
+  color: var(--primary-dark);
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: var(--primary-dark);
+  font-size: 0.8rem;
+}
+
+h3 {
+  font-size: 0.7rem;
+  display: block;
+}
+
+p {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+
+.text-container > h1 {
+  margin-bottom: 10px;
+}
+
+.text-container > p {
+  color: var(--neutral-dark);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.profile__name {
+  margin-bottom: 5px;
+}
+
+.profile__verified {
+  color: var(--primary-light);
+  font-weight: 400;
+}
+
+/******************* 
+    Layout 
+*******************/
+
+main {
+  width: 90%;
+  max-width: 300px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 90%;
+  z-index: 1;
+}
+
+.ratings-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+
+  background: var(--primary-dark);
+  color: var(--neutral-light);
+  border-radius: 10px;
+
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.card-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/******************* 
+    COMPONENTS 
+*******************/
+
+/* Profile Image */
+
+.card__image {
+  float: left;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+/* Ratings */
+
+.stars {
+  height: 15px;
+  width: 15px;
+  margin-bottom: 10px;
+}
+
+.rating-wrapper {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--neutral-light);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 10px 0;
+}
+
+/* BACKGROUND PATTERN MOBILE */
+
+.mobile-bg-top,
+.mobile-bg-bottom {
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+
+.mobile-bg-top {
+  top: 0;
+}
+
+.mobile-bg-bottom {
+  bottom: 0;
+}
+
+.desktop-bg-top,
+.desktop-bg-bottom {
+  display: none;
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* RESPONSIVE PART */
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    margin-top: 60px;
+  }
+
+  .mobile-bg-top,
+  .mobile-bg-bottom {
+    display: none;
+  }
+
+  .container--top {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text-container {
+    flex: 1;
+  }
+
+  .text-container > h1,
+  .text-container > p {
+    font-size: 2.5rem;
+    text-align: left;
+    width: 75%;
+  }
+
+  .text-container > p {
+    font-size: 0.8rem;
+  }
+
+  .ratings-container {
+    flex: 1;
+  }
+
+  .stars-container {
+    margin: 0 1rem;
+  }
+
+  .rating-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .stars {
+    margin-bottom: 0;
+  }
+
+  .rating--top {
+    align-self: flex-start;
+  }
+
+  .rating--middle {
+    align-self: center;
+  }
+
+  .rating--bottom {
+    align-self: flex-end;
+  }
+
+  .container--bottom {
+    min-height: 290px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  .card:first-child {
+    margin-right: 1rem;
+    align-self: flex-start;
+  }
+
+  .card--middle {
+    align-self: center;
+  }
+
+  .card:last-child {
+    margin-left: 1rem;
+    align-self: flex-end;
+  }
+
+  .desktop-bg-top,
+  .desktop-bg-bottom {
+    display: block;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .desktop-bg-top {
+    top: 0;
+    left: 0;
+  }
+
+  .desktop-bg-bottom {
+    bottom: 0;
+    right: 0;
+  }
+}
