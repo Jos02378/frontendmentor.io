@@ -24,6 +24,7 @@ body {
   font-size: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /******************* 
@@ -83,6 +84,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .container {
@@ -178,8 +180,8 @@ main {
 /* ATTRIBUTION */
 
 .attribution {
-  position: absolute;
-  bottom: 1rem;
+  position: relative;
+  margin: 1rem 0;
   font-size: 11px;
   text-align: center;
 }
@@ -191,9 +193,13 @@ main {
 /* RESPONSIVE PART */
 
 @media screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+
   main {
     max-width: 1200px;
-    margin-top: 60px;
+    margin: 0;
   }
 
   .mobile-bg-top,
@@ -286,5 +292,11 @@ main {
   .desktop-bg-bottom {
     bottom: 0;
     right: 0;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
   }
 }
