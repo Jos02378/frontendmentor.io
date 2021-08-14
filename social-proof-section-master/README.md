@@ -41,7 +41,13 @@ Users should be able to:
 
 ### What I learned
 
-From this challenge I learned to organize my css file with different sections like component, layout, and typography.
+From this challenge I learned to organize my css file with different sections like component, layout, and typography. I also learned how to use the function "calc" which i use to position the background image pattern.
+
+```css
+.mobile-bg-bottom {
+  bottom: calc(2rem + 11px);
+}
+```
 
 ## Author
 
