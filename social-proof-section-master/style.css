@@ -25,6 +25,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 /******************* 
@@ -84,7 +85,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .container {
@@ -159,8 +159,8 @@ main {
 
 .mobile-bg-top,
 .mobile-bg-bottom {
-  display: block;
   position: absolute;
+  display: block;
   z-index: 0;
 }
 
@@ -169,7 +169,7 @@ main {
 }
 
 .mobile-bg-bottom {
-  bottom: 0;
+  bottom: calc(2rem + 11px);
 }
 
 .desktop-bg-top,
@@ -296,7 +296,7 @@ main {
 
   .attribution {
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     margin: 0;
   }
 }
