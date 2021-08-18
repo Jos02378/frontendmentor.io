@@ -24,6 +24,11 @@ Users should be able to:
 
 ![](./screenshot.PNG)
 
+### Links
+
+- Solution URL: (https://www.frontendmentor.io/solutions/stats-preview-card-component-with-html5-and-css3-lfYLS3MU)
+- Live Site URL: (https://stats-preview-card-component-jos02378.netlify.app/)
+
 ### Built with
 
 - HTML5
