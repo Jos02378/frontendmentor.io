@@ -28,6 +28,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: (https://www.frontendmentor.io/solutions/3column-preview-card-component-uL5LGndsQ)
 - Live Site URL: (https://3-column-preview-card-component-jos02378.netlify.app/)
 
 ## My process
