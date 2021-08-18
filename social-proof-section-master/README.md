@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/Jos02378/frontendmentor.io/tree/main/social-proof-section-master)
+- Solution URL: (https://www.frontendmentor.io/solutions/social-proof-section-using-html5-and-css3-3rOZ72DzA)
 - Live Site URL: (https://social-proof-section-master-jos02378.netlify.app/)
 
 ## My process
