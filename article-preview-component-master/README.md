@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/stats-preview-card-component-with-html5-and-css3-lfYLS3MU_)
-- Live Site URL: (https://stats-preview-card-component-jos02378.netlify.app/)
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-article-preview-using-html-css-and-javascript-tWPO8k65F)
+- Live Site URL: (https://article-preview-component-master-jos02378.netlify.app/)
 
 ## My process
 
