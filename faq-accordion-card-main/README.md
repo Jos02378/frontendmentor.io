@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: (https://github.com/Jos02378/frontendmentor.io/tree/main/faq-accordion-card-main)
+-   Solution URL: (https://www.frontendmentor.io/solutions/faq-accordion-card-using-html5-css3-and-javascript-gXXahliEu)
 -   Live Site URL: (https://faq-accordion-card-jos02378.netlify.app/)
 
 ## My process
