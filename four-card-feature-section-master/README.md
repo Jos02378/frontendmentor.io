@@ -23,11 +23,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.PNG)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: ()
+- Solution URL: (https://www.frontendmentor.io/solutions/four-card-challenge-using-html-5-and-flex-box-FsIgstB1N)
 - Live Site URL: (https://four-card-feature-section-jos02378.netlify.app/)
 
 ## My process
