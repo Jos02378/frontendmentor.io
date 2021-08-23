@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+
+  --neutral-dark-blue: hsl(234, 12%, 34%);
+  --neutral-gray-blue: hsl(229, 6%, 66%);
+  --neutral-light-gray: hsl(0, 0%, 98%);
+}
+
+/******************* 
+    GLOBAL STYLES 
+*******************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin-top: 4em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+/******************* 
+    TYPOGRAPHY
+*******************/
+h1,
+h2 {
+  font-size: 1.5rem;
+  color: var(--neutral-dark-blue);
+}
+
+h1 {
+  font-weight: 200;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--neutral-gray-blue);
+}
+
+main > p {
+  max-width: 32ch;
+  margin: 0 auto;
+}
+
+main > h1,
+main > h2,
+main > p {
+  text-align: center;
+}
+
+.card > h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card > p {
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/******************* 
+    LAYOUT
+*******************/
+
+main {
+  width: 90%;
+  max-width: 365px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+/******************* 
+    COMPONENTS 
+*******************/
+
+/* CARDS */
+
+.card {
+  max-width: 350px;
+  min-height: 200px;
+  position: relative;
+  margin: 2em auto;
+  border-radius: 10px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 13px 25px -20px var(--neutral-dark-blue);
+  overflow-x: hidden;
+}
+
+.card__image {
+  width: 4rem;
+  height: 4rem;
+  margin-top: 3rem;
+  align-self: flex-end;
+}
+
+.card__line {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  background: var(--primary-red);
+}
+
+.line--one {
+  background: var(--primary-cyan);
+}
+
+.line--two {
+  background: var(--primary-red);
+}
+
+.line--three {
+  background: var(--primary-orange);
+}
+
+.line--four {
+  background: var(--primary-blue);
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  font-size: 12px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+}
+
+/******************* 
+    RESPONSIVE 
+*******************/
+
+@media screen and (min-width: 1025px) {
+  main > h1,
+  main > h2 {
+    font-size: 2.3rem;
+  }
+
+  main > p {
+    max-width: 55ch;
+  }
+
+  main {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper > .card {
+    margin-bottom: 0;
+  }
+}
