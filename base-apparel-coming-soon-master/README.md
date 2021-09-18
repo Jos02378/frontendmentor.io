@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/base-apparel-using-html-css-and-javascript-xM-LgudnX)
 - Live Site URL: [live site URL](https://base-apparel-jos02378.netlify.app/)
 
 ## My process
