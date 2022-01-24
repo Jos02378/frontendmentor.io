@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.JPG)
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/responsive-time-tracking-dashboard-challenge-using-html-css-and-js-NLU9XfX3W)
 - Live Site URL: [live site URL](https://time-tracking-dashboard-jos02378.netlify.app/)
 
 ## My process
