@@ -21,10 +21,10 @@ function loadCards() {
     const card = document.createElement('article');
     const statsCardContainer = document.createElement('div');
     const cardWrapper = document.createElement('div');
-    const cardTitle = document.createElement('h3');
+    const cardTitle = document.createElement('h2');
     const cardElipsis = document.createElement('i');
     const cardWrapperTwo = document.createElement('div');
-    const cardCurrentTime = document.createElement('h2');
+    const cardCurrentTime = document.createElement('h3');
     const cardDescription = document.createElement('p');
 
     const cardClassType = data.title.split(' ').join('-').toLowerCase();
