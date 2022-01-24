@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --primary-blue: hsl(246, 80%, 60%);
+
+  --primary-work: hsl(15, 100%, 70%);
+  --primary-play: hsl(195, 74%, 62%);
+  --primary-study: hsl(348, 100%, 68%);
+  --primary-exercise: hsl(145, 58%, 55%);
+  --primary-social: hsl(264, 64%, 52%);
+  --primary-self-care: hsl(43, 84%, 65%);
+
+  --neutral-darkest-blue: hsl(226, 43%, 10%);
+  --neutral-dark-blue: hsl(235, 46%, 20%);
+  --neutral-desaturated-blue: hsl(235, 45%, 61%);
+  --neutral-pale-blue: hsl(236, 100%, 87%);
+}
+
+/******************* 
+    GLOBAL STYLES 
+*******************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  background: var(--neutral-darkest-blue);
+  font-size: 62.5%;
+}
+
+/******************* 
+    TYPOGRAPHY
+*******************/
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+h1 > span {
+  font-size: 1rem;
+  color: var(--neutral-pale-blue);
+}
+
+.card-profile__option {
+  font-size: 1rem;
+  color: var(--neutral-desaturated-blue);
+}
+
+.card-profile__option:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.card-profile__option.active {
+  color: #fff;
+}
+
+/* Stats card styling */
+
+.card-stats__heading {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.heading--bold {
+  font-weight: 400;
+}
+
+.heading--big {
+  font-size: 2rem;
+}
+
+.card-stats__description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--neutral-pale-blue);
+}
+
+/******************* 
+    LAYOUT
+*******************/
+
+main {
+  width: 100%;
+  max-width: 365px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/******************* 
+    COMPONENTS 
+*******************/
+
+/* Profile card */
+.card-profile {
+  width: 90%;
+  background: var(--neutral-dark-blue);
+  border-radius: 0.5rem;
+  margin: 3em auto 1.5em;
+}
+
+.card-profile__profile,
+.card-profile__time-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-profile__profile {
+  padding: 2rem 1rem;
+  background: var(--primary-blue);
+  border-radius: 0.5rem;
+}
+
+.card-profile__image {
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card-profile__time-options {
+  padding: 1.2rem 0.8rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Stats cards */
+.card--work {
+  background: var(--primary-work);
+  background-image: url('./images/icon-work.svg');
+}
+
+.card--play {
+  background: var(--primary-play);
+  background-image: url('./images/icon-play.svg');
+}
+
+.card--study {
+  background: var(--primary-study);
+  background-image: url('./images/icon-study.svg');
+}
+
+.card--exercise {
+  background: var(--primary-exercise);
+  background-image: url('./images/icon-exercise.svg');
+  background-position: top 0px right 16px;
+}
+
+.card--social {
+  background: var(--primary-social);
+  background-image: url('./images/icon-social.svg');
+}
+
+.card--self-care {
+  background: var(--primary-self-care);
+  background-image: url('./images/icon-self-care.svg');
+}
+
+.card--work,
+.card--social {
+  background-position: top -10px right 16px;
+}
+
+.card--play,
+.card--study,
+.card--self-care {
+  background-position: top -8px right 16px;
+}
+
+.card-stats {
+  width: 90%;
+  padding-top: 4em;
+  display: flex;
+  align-items: flex-end;
+  margin: 1.5em auto;
+  background-repeat: no-repeat;
+}
+
+.card-stats,
+.card-stats__container {
+  border-radius: 1rem;
+}
+
+.card-stats__container {
+  flex: 1;
+  padding: 2em 1em;
+  background: var(--neutral-dark-blue);
+}
+
+.card-stats__container:hover {
+  cursor: pointer;
+  background: hsl(235, 46%, 35%);
+}
+
+.card-stats__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+}
+
+.card-stats__icon {
+  width: 1.5rem;
+  height: 0.5rem;
+  background: url('./images/icon-ellipsis.svg');
+  background-repeat: no-repeat;
+}
+
+.card-stats__icon:hover {
+  filter: brightness(130%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+.attribution a {
+  color: rgb(83, 22, 252);
+}
+
+@media screen and (min-width: 1200px) {
+  /******************* 
+      TYPOGRAPHY
+  *******************/
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h1 > span {
+    font-size: 0.9rem;
+  }
+
+  .heading--big {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-stats__description {
+    font-size: 0.9rem;
+  }
+
+  /******************* 
+      LAYOUT
+  *******************/
+
+  main {
+    max-width: 69rem;
+    flex-direction: row;
+  }
+
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+  }
+
+  /******************* 
+      COMPONENTS 
+  *******************/
+
+  .card-profile {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-right: 2.5em;
+  }
+
+  .card-profile__profile,
+  .card-profile__time-options {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .card-profile__profile {
+    flex: 1;
+    padding: 0.8em 3em 5em;
+    background: var(--primary-blue);
+    border-radius: 0.5rem;
+  }
+
+  .card-profile__image {
+    width: 5rem;
+  }
+
+  .card-profile__time-options {
+    padding: 1.2em 3em;
+  }
+
+  .card-profile__option {
+    margin: 0.6em 0;
+  }
+
+  .card-stats {
+    width: 100%;
+    margin: 0;
+  }
+
+  .wrapper--down {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2.5em;
+  }
+}
